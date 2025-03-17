@@ -1,0 +1,46 @@
+
+.add-property-banner {
+    position: relative;
+    background: url("https://preview.colorlib.com/theme/realestate2/img/property/3.png")
+      center/cover no-repeat;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .add-property-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(241, 173, 45, 0.8); /* Orange overlay */
+    z-index: 1;
+  }
+  
+  .add-property-banner .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .add-property-banner {
+      height: auto;
+      padding: 40px 0;
+      text-align: center;
+    }
+  
+    .add-property-banner h2 {
+      font-size: 1.5rem;
+    }
+  
+    .add-property-banner span {
+      font-size: 1rem;
+      display: block;
+      text-align: center;
+    }
+  
+    .add-property-banner button {
+      width: 100%;
+      max-width: 200px;
+    }
+  }

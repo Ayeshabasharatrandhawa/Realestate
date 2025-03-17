@@ -1,0 +1,36 @@
+.faq-title {
+    color: #001D38;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .accordion-button {
+    background-color: transparent !important;
+    color: #001D38 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: none !important;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: #001D38 !important;
+  }
+  
+  .accordion-body {
+    color: #727272;
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
+  .accordion-item {
+    border: none !important;
+  }

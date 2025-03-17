@@ -1,0 +1,46 @@
+.about-section {
+    background-color: #f8f9fa;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    color:#001D38 ;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .about-section .custom-btn {
+    color: #F1AE67;
+    border-color: #F1AE67;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-section .custom-btn:hover {
+    background-color: #F1AE67;
+    border-color: #F1AE67;
+    color: white;
+}
+@media (max-width: 768px) {
+  .about-section {
+      text-align: center; /* Center the text and button */
+  }
+
+  .about-section img {
+      max-width: 100%; /* Ensure image responsiveness */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+  }
+
+  .about-section .custom-btn {
+      display: block;
+      width: fit-content;
+      margin: 15px auto; /* Center the button and add spacing */
+  }
+}

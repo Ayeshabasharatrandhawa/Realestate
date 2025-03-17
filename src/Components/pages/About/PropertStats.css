@@ -1,0 +1,28 @@
+.hover-effect {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hover-effect:hover {
+    background-color: #0056b3 !important;
+    transform: scale(1.05);
+  }
+  .property-img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .property-img:hover {
+    transform: scale(1.1);
+  }.custom-btn {
+    border: 1px solid #FDAE5C;
+    color: #FDAE5C;
+    height: 60px;
+    width:200px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-btn:hover {
+    background-color: #FDAE5C;
+    color: white;
+    border-color:#FDAE5C;
+  }
