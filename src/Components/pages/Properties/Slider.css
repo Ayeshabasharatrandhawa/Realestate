@@ -1,0 +1,100 @@
+/* General styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    font-size: 2rem;
+  }
+  
+  /* Property card styles */
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .property-img {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-footer span {
+    font-size: 14px;
+  }
+  
+  /* Custom Arrows */
+  .slick-prev, .slick-next {
+    z-index: 10;
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .slick-prev {
+    left: -40px;
+  }
+  
+  .slick-next {
+    right: -40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    h1, h2 {
+      font-size: 1.8rem;
+    }
+    .property-img {
+      height: 220px;
+    }
+    .slick-prev {
+      left: -20px;
+    }
+    .slick-next {
+      right: -20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1, h2 {
+      font-size: 1.5rem;
+    }
+    .property-img {
+      height: 200px;
+    }
+    .card-footer span {
+      font-size: 12px;
+    }
+    .slick-prev, .slick-next {
+      font-size: 25px;
+    }
+    .slick-prev {
+      left: -10px;
+    }
+    .slick-next {
+      right: -10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1, h2 {
+      font-size: 1.2rem;
+    }
+    .property-img {
+      height: 180px;
+    }
+    .card-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    .card-footer span {
+      margin-bottom: 5px;
+    }
+    .slick-prev, .slick-next {
+      font-size: 20px;
+    }
+  }
+  

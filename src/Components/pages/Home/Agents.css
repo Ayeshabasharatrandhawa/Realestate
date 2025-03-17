@@ -1,0 +1,28 @@
+.image-container {
+    position: relative;
+    overflow: hidden; /* Ensures overlay stays within the rounded image edges */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay a {
+    text-decoration: none;
+  }
+  
+  .fs-5 {
+    font-size: 1.25rem; 
+  }

@@ -1,0 +1,70 @@
+.real-estate-section {
+    position: relative;
+    min-height: 100vh;
+    background: url('https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align card to the left */
+    padding-left: 5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.property-card {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .real-estate-section {
+        padding-left: 20px; 
+    }
+
+    .property-card {
+        max-width: 90%;
+    }
+}
+
+
+.view-details-button {
+    background-color: #FADE5C;
+    border: none;
+    color:white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.view-details-button:hover {
+    background-color: white;
+    color: #FADE5C;
+}
+
+.badge-sale {
+    top: -10px;
+    left: 15px;
+    padding: 7px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.animate-card {
+    animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

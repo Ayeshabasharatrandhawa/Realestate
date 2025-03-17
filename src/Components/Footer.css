@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.footer {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.footer-title .dot {
+    color: #ff6600; /* Accent color */
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #919191;
+    margin-bottom: 5px;
+}
+
+.social-icons a {
+    color: #919191;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: black;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    font-size: 16px;
+    color: #919191;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: black;
+}
+
+
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #fff;
+    padding: 5px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.subscribe-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    flex: 1;
+}
+
+.subscribe-btn {
+    margin-top: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #e65c00;
+}
+
+.subscribe-text {
+    font-size: 16px;
+    color: #919191;
+    margin-top: 10px;
+}
+
+
+.copyright-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.copyright-text a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.copyright-text a:hover {
+    text-decoration: underline;
+}
