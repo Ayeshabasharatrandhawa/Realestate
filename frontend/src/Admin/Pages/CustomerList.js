@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
-import './Customer.css'
+import './Customer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const customers = [
@@ -56,20 +56,26 @@ const CustomerList = () => {
       <h3 className="mb-4 text-center">Customer List</h3>
 
       {customers.map((customer, index) => (
-        <Card 
+        <Card
           className="mb-3 shadow-sm p-3 rounded"
           key={index}
           style={{ maxWidth: '1050px', minHeight: '160px' }}
         >
-          <div className="d-flex align-items-center">
-            <img src={customer.image} alt="Customer" className="rounded-circle me-3" width="60" height="60" />
-            <div className="flex-grow-1">
+          <div className="d-flex align-items-center customer-card">
+            <img
+              src={customer.image}
+              alt="Customer"
+              className="rounded-circle me-3"
+              width="60"
+              height="60"
+            />
+            <div className="flex-grow-1 customer-details">
               <small className="text-muted">{customer.id}</small>
               <h5 className="mb-0">{customer.name}</h5>
               <small className="text-muted">Join on {customer.joined}</small>
             </div>
 
-            <div className="text-end" style={{ fontSize: '14px' }}>
+            <div className="text-end customer-text-end" style={{ fontSize: '14px' }}>
               <p><b>Location:</b><br />{customer.location}</p>
               <p><b>Phone:</b> {customer.phone}</p>
               <p><b>Email:</b> {customer.email}</p>
@@ -86,8 +92,8 @@ const CustomerList = () => {
             </Button>
 
             {openDropdown === index && (
-              <div 
-                className="p-3 bg-white shadow rounded position-absolute" 
+              <div
+                className="p-3 bg-white shadow rounded position-absolute order-history-dropdown"
                 style={{ zIndex: 10, width: '350px', top: '100%', left: '0', marginTop: '10px' }}
               >
                 {orderHistory.map((order, idx) => (

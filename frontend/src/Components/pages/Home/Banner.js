@@ -6,6 +6,7 @@ const Banner = () => {
   const formatPrice = (value) => {
     return `${(value / 1000).toFixed(0)}k`;
   };
+  
 
   return (
     

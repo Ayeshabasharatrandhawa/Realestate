@@ -1,5 +1,31 @@
 .card:hover {
-    transform: none !important;
-    box-shadow: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .customer-card {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
   }
-  
+
+  .customer-card img {
+    margin-bottom: 10px;
+  }
+
+  .customer-details {
+    width: 100%;
+  }
+
+  .customer-text-end {
+    text-align: center !important;
+    margin-top: 15px;
+  }
+
+  .order-history-dropdown {
+    width: 100% !important;
+    left: 0 !important;
+  }
+}

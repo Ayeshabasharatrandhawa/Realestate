@@ -1,34 +1,48 @@
 .total-properties-card {
-    background-color: #FADE5C;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .progress-bar-bg {
-    background-color: #ffffff52;
-    border-radius: 5px;
-    height: 8px;
-    width: 100%;
-  }
-  
-  .progress-bar-fill {
-    background-color: #fff;
-    height: 8px;
-    border-radius: 5px;
-  }
-  
-  .property-card {
-  background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 100%;   
+  background-color: #FADE5C;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar-bg {
+  background-color: #ffffff52;
+  border-radius: 5px;
+  height: 8px;
+  width: 100%;
+}
+
+.progress-bar-fill {
+  background-color: #fff;
+  height: 8px;
+  border-radius: 5px;
+}
+
+.property-card {
+background-color: #ffffff;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+width: 100%;   
 }
 
 
 .circular-progress {
-  width: 80px;   
-  height: 80px;  
+width: 80px;   
+height: 80px;  
+border-radius: 50%;
+font-size: 16px;  
+font-weight: bold;
+color: #555;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+
+.circular-progress {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  font-size: 16px;  
+  font-size: 14px;
   font-weight: bold;
   color: #555;
   display: flex;
@@ -37,88 +51,99 @@
   position: relative;
 }
 
-  
-  .circular-progress {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    font-size: 14px;
-    font-weight: bold;
-    color: #555;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .circular-progress::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 6px solid #e9e9e9;
-  }
-  
-  .circular-progress.blue::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 6px solid #5d5fef;
-    border-right-color: transparent;
-    transform: rotate(255deg);
-  }
-  
-  .circular-progress.green::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 6px solid #3ac977;
-    border-right-color: transparent;
-    transform: rotate(325deg);
-  }
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #e9e9e9;
+}
+
+.circular-progress.blue::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #5d5fef;
+  border-right-color: transparent;
+  transform: rotate(255deg);
+}
+
+.circular-progress.green::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #3ac977;
+  border-right-color: transparent;
+  transform: rotate(325deg);
+}
 .revenue-card {
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .revenue-bars {
-    height: 120px;
-    overflow: hidden;
-  }
-  
-  .revenue-bar {
-    width: 18px;
-  }
-  
-  .bar-bg {
-    height: 100%;
-    width: 100%;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    position: relative;
-  }
-  
-  .bar-bg.filled::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60%; 
-    background-color: #3d4fe7;
-    border-radius: 10px;
-  }
-  
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
 .revenue-bars {
   height: 120px;
+  overflow: hidden;
 }
 
 .revenue-bar {
   width: 18px;
+}
+
+.bar-bg {
+  height: 100%;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bar-bg.filled::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%; 
+  background-color: #3d4fe7;
+  border-radius: 10px;
+}
+
+.revenue-bars {
+height: 120px;
+}
+
+.revenue-bar {
+width: 18px;
+}
+
+.bar-bg {
+height: 100px;
+background-color: #e0e0e0;
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+}
+
+.bar-filled {
+position: absolute;
+bottom: 0;
+width: 100%;
+background-color: #3d4fe7;
+border-radius: 10px;
+}
+
+.revenue-bars {
+  height: 140px;
+  width: 100%;
+}
+
+.revenue-bar {
+  width: 25px;  
 }
 
 .bar-bg {
@@ -133,31 +158,106 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #3d4fe7;
+  background-color: #FADE5C;  
   border-radius: 10px;
+}
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+.dashboard-content {
+  padding: 1rem !important;
+}
+
+.d-flex.justify-content-between.align-items-center.mb-3 {
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+
+.d-flex.justify-content-between.align-items-center.mb-3 > div:last-child {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-properties-card {
+  padding: 1.5rem !important;
+}
+
+.row {
+  flex-direction: column;
+}
+
+.col-md-4 {
+  width: 100%;
+}
+
+.property-card {
+  padding: 1.5rem !important;
+}
+
+.circular-progress {
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+}
+
+.revenue-card {
+  padding: 1.5rem !important;
 }
 
 .revenue-bars {
-    height: 140px;
-    width: 100%;
-  }
-  
-  .revenue-bar {
-    width: 25px;  
-  }
-  
-  .bar-bg {
-    height: 100px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .bar-filled {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #FADE5C;  
-    border-radius: 10px;
-  }
+  height: 120px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.revenue-bar {
+  width: 15px;
+}
+
+.bar-bg {
+  height: 80px;
+}
+
+h1, h2, h4, h5 {
+  font-size: 1.2rem;
+}
+
+p, small {
+  font-size: 0.85rem;
+}
+}
+
+@media (max-width: 480px) {
+.circular-progress {
+  width: 40px;
+  height: 40px;
+  font-size: 10px;
+}
+
+.revenue-bars {
+  height: auto;
+  gap: 6px;
+}
+
+.revenue-bar {
+  width: 10px;
+}
+
+.bar-bg {
+  height: 60px;
+}
+
+h1, h2, h4, h5 {
+  font-size: 1rem;
+}
+
+p, small {
+  font-size: 0.75rem;
+}
+
+button.btn {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+}
+}

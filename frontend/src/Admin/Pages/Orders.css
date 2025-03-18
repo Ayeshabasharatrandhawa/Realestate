@@ -1,18 +1,62 @@
 /* Orders.css Updated */
 
 .custom-table tbody tr:hover {
-    background-color: #f5f7fa !important;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .custom-table td,
-  .custom-table th {
-    font-size: 13px; /* Slightly reduced size */
-    vertical-align: middle;
-    padding: 0.75rem 1.5rem; /* Increased horizontal spacing */
-  }
-  
-  .icon-purple {
-    color: #FADE5C;
-  }
+  background-color: #fdfdfd !important;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom-table td,
+.custom-table th {
+  font-size: 13px; /* Slightly reduced size */
+  vertical-align: middle;
+  padding: 0.75rem 1.5rem; /* Increased horizontal spacing */
+}
+
+.icon-purple {
+  color: #FADE5C;
+}
+
+@media (max-width: 768px) {
+.custom-table thead {
+  display: none; 
+}
+
+.custom-table tbody tr {
+  display: block;
+  background: #fff;
+  margin-bottom: 20px;         
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.custom-table tbody td {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 13px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.custom-table tbody td:last-child {
+  border-bottom: none;
+}
+
+.custom-table tbody td::before {
+  content: attr(data-label);
+  font-weight: 600;
+  color: #ffffff;
+  min-width: 120px;
+}
+
+
+.custom-table tbody td input[type="checkbox"] {
+  margin-left: 8px;
+}
+
+.row .col-md-3,
+.row .col-md-6 {
+  margin-bottom: 15px;
+}
+}

@@ -5,7 +5,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState('');
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false); // Initially closed
 
   const toggleMenu = (menu) => {
     setOpenMenu(openMenu === menu ? '' : menu);
@@ -13,10 +13,15 @@ const Sidebar = () => {
 
   return (
     <>
+      {/* Toggle Button */}
       <div className="sidebar-toggle d-md-none" onClick={() => setSidebarOpen(!sidebarOpen)}>
         <i className="bi bi-list"></i>
       </div>
 
+      {/* Overlay when Sidebar is open */}
+      {sidebarOpen && <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)}></div>}
+
+      {/* Sidebar */}
       <div className={`sidebar d-flex flex-column p-3 ${sidebarOpen ? 'show' : ''}`}>
         {/* Dashboard */}
         <div className={`menu-item ${openMenu === 'dashboard' ? 'active' : ''}`} onClick={() => toggleMenu('dashboard')}>
