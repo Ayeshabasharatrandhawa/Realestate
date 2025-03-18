@@ -35,7 +35,7 @@ const Navbar = () => {
 
         <div className={`navbar-collapse justify-content-between ${isNavCollapsed ? "collapse" : "show"}`}>
           <ul className="navbar-nav">
-            {["/", "/about", "/properties", "/contact", "/signup"].map((path, index) => (
+            {["/", "/about", "/properties", "/contact", ""].map((path, index) => (
               <li className="nav-item" key={index}>
                 <Link
                   className={`nav-link text-white ${location.pathname === path ? "active-link" : ""}`}
@@ -49,9 +49,10 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <button className="btn btn-warning rounded-pill d-none d-lg-inline-block ms-3 btn-hover">
-          Add Property
-        </button>
+        
+        <Link to="/signup" className="btn btn-warning rounded-pill d-none d-lg-inline-block ms-3 btn-hover">
+          Sign Up
+        </Link>
       </div>
     </nav>
   );

@@ -8,14 +8,18 @@ import Properties from "./Components/pages/Properties/Properties";
 import Contact from "./Components/pages/Contact/Contact";
 import Signup from "./Components/pages/Auth/Signup";
 import Login from "./Components/pages/Auth/Login";
+import AdminRoutes from "./Admin/AdminRoutes";
 
 const AppLayout = () => {
   const location = useLocation();
-  const hideNavbarFooter = location.pathname === "/signup" || location.pathname === "/login";
+
+  // Hide Navbar & Footer only on /admin pages
+  const isAdminRoute = location.pathname.startsWith("/admin");
 
   return (
-    <>
-      {!hideNavbarFooter && <Navbar />}
+    <div>
+      {!isAdminRoute && <Navbar />}
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -23,9 +27,13 @@ const AppLayout = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+
+        {/* Admin routes */}
+        <Route path="/admin/*" element={<AdminRoutes />} />
       </Routes>
-      {!hideNavbarFooter && <Footer />}
-    </>
+      
+      {!isAdminRoute && <Footer />}
+    </div>
   );
 };
 
