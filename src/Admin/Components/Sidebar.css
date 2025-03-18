@@ -1,0 +1,103 @@
+.sidebar {
+    width: 220px;
+    height: 180vh;
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar-toggle {
+    background-color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar-toggle i {
+    font-size: 26px;
+    color: #000;
+  }
+  
+  /* Hide sidebar on mobile by default */
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  /* Show when toggled */
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  
+  /* Always visible on medium+ screens */
+  @media (min-width: 768px) {
+    .sidebar {
+      transform: translateX(0);
+      position: relative;
+    }
+  
+    .sidebar-toggle {
+      display: none;
+    }
+  }
+  
+  /* Menu Item Styling */
+  .menu-item {
+    color: #7b8493;
+    padding: 20px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-item i {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .menu-item:hover {
+    color: #000;
+  }
+  
+  .menu-item.active {
+    color: #000;
+  }
+  
+  /* Dropdown Styling */
+  .dropdown-list {
+    background-color: #fff;
+    width: 100%;
+    padding-left: 25px;
+    border-left: 2px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-item {
+    padding: 12px 0;
+    font-size: 14px;
+    color: #7b8493;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .dropdown-item:hover {
+    color: #000;
+  }
+  
+  .dropdown-item i {
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Only icon color changes on hover */
+  .dropdown-item:hover i {
+    color: #000;
+  }

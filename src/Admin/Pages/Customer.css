@@ -1,0 +1,5 @@
+.card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  

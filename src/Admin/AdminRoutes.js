@@ -1,31 +1,32 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
-import AdminDashboard from "./Pages/AdminDashboard"; // Ensure this is correct
+import AdminLayout from "./AdminLayout"; 
+import AdminDashboard from "./Pages/AdminDashboard";
 import AddAgent from "./Pages/AddAgent";
-import UserList from "./Pages/UserList";
+import AllAgents from "./Pages/AllAgents";
 import AddProperty from "./Pages/AddProperty";
-import ManageProperties from "./Pages/ManageProperties";
-import Inquiries from "./Pages/Inquiries";
-import Settings from "./Pages/Settings";
-import Sidebar from "./Components/Sidebar";
-import DashboardNavbar from "./Components/DashboardNavbar";
-
-
+import PropertyList from "./Pages/PropertyList";
+import CustomerList from "./Pages/CustomerList";
+import Orders from "./Pages/Orders";
 
 const AdminRoutes = () => {
   return (
     <Routes>
-      <Route>
-        <Sidebar/>
-        <DashboardNavbar/>
-        <Route path="/dashboard" element={<AdminDashboard />} />
-        <Route path="/admin/add-agent" element={<AddAgent />} />
-        <Route path="/admin/users" element={<UserList />} />
-        <Route path="/admin/add-property" element={<AddProperty />} />
-        <Route path="/admin/properties" element={<ManageProperties />} />
-        <Route path="/admin/inquiries" element={<Inquiries />} />
-        <Route path="/admin/settings" element={<Settings />} />
+      <Route path="/" element={<AdminLayout />}>
+        
+        <Route path="dashboard" element={<AdminDashboard />} />
+
+        
+        <Route path="add-agent" element={<AddAgent />} />
+        <Route path="all-agents" element={<AllAgents />} />
+
+        
+        <Route path="add-property" element={<AddProperty />} />
+        <Route path="property-list" element={<PropertyList />} />
+
+        
+        <Route path="customers" element={<CustomerList />} />
+        <Route path="orders" element={<Orders />} />
       </Route>
     </Routes>
   );

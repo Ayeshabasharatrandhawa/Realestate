@@ -6,12 +6,12 @@ import DashboardNavbar from "./Components/DashboardNavbar";
 const AdminLayout = () => {
   return (
     <div className="admin-container" style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-      {/* Always show the top admin navbar */}
+      {/* Admin Top Navbar */}
       <DashboardNavbar />
       <div className="admin-main" style={{ display: "flex", flex: 1 }}>
         {/* Sidebar on the left */}
         <Sidebar />
-        {/* Content area where the child route is rendered */}
+        {/* Content area for nested admin pages */}
         <div className="admin-content" style={{ flex: 1, padding: "20px" }}>
           <Outlet />
         </div>

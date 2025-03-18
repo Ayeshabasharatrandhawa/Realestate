@@ -6,10 +6,10 @@ const DashboardNavbar = () => {
     "https://omah.dexignzone.com/php/demo/assets/images/profile/17.jpg";
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light">
+    <nav className="navbar navbar-expand-md navbar-white bg-white">
       <div className="container-fluid">
       <h1 className="navbar-brand mb-0 h1" style={{fontSize:"30px", fontWeight:"bold"}}>
-  Real<span style={{ color: "#FADE5C", fontSize:"30px" }}>estate.</span>
+  Real<span style={{ color: "#FADE5C", fontSize:"30px" }}>Estate.</span>
 </h1>
 
 

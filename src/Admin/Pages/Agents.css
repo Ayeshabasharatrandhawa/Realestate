@@ -1,0 +1,46 @@
+.add-agent-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .add-agent-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .add-agent-form .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .add-agent-form .form-control,
+  .add-agent-form .form-select {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .add-agent-form .form-control::placeholder {
+    color: #aaa;
+  }
+  
+  .add-agent-form textarea {
+    resize: none;
+  }
+  
+  .add-agent-form .btn-submit {
+    background-color: #FADE5C;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .add-agent-form .btn-submit:hover {
+    background-color: #f0cd32;
+  }
+  
